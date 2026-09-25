@@ -1,31 +1,37 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Uptime monitor and status page for heeey.click (SOC 2 control C17).
+# Every 5 minutes GitHub Actions checks each site below; an outage opens an issue here
+# automatically and closes it on recovery. The page is served by GitHub Pages.
+owner: carloseorsantos
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Website
+    url: https://www.heeey.click
+  - name: App and database
+    # Checks Supabase Auth, Storage and Postgres; answers 503 when any of them fails
+    url: https://www.heeey.click/api/health
+  - name: REST API
+    url: https://www.heeey.click/api/v1
+  - name: MCP server
+    # The endpoint only accepts POST, so a 405 to this GET means it is up
+    url: https://www.heeey.click/api/mcp
+    expectedStatusCodes:
+      - 405
+
+assignees:
+  - carloseorsantos
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.heeey.click
+  logoUrl: https://raw.githubusercontent.com/carloseorsantos/heeey.click/main/public/logo.svg
+  favicon: https://raw.githubusercontent.com/carloseorsantos/heeey.click/main/public/favicon.svg
+  name: heeey.click status
+  introTitle: "**heeey.click** status"
+  introMessage: Our servers and services are monitored automatically every 5 minutes. Outages and incidents appear here as they happen.
   navbar:
     - title: Status
       href: /
+    - title: heeey.click
+      href: https://www.heeey.click
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
