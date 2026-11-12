@@ -11,8 +11,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 218,
-    "timeDay": 136,
-    "timeWeek": 177,
+    "timeDay": 0,
+    "timeWeek": 169,
     "timeMonth": 212,
     "timeYear": 218,
     "dailyMinutesDown": {}
@@ -22,19 +22,19 @@
     "url": "https://www.heeey.click/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/www.heeey.click.ico",
     "slug": "app-and-database",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 3527,
-    "timeDay": 4428,
-    "timeWeek": 3778,
-    "timeMonth": 3540,
-    "timeYear": 3527,
+    "status": "up",
+    "uptime": "99.70%",
+    "uptimeDay": "85.70%",
+    "uptimeWeek": "97.96%",
+    "uptimeMonth": "99.53%",
+    "uptimeYear": "99.70%",
+    "time": 3533,
+    "timeDay": 4499,
+    "timeWeek": 3833,
+    "timeMonth": 3546,
+    "timeYear": 3533,
     "dailyMinutesDown": {
-      "2026-11-12": 0
+      "2026-11-12": 206
     }
   },
   {
@@ -49,9 +49,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 267,
-    "timeDay": 88,
-    "timeWeek": 161,
-    "timeMonth": 250,
+    "timeDay": 287,
+    "timeWeek": 187,
+    "timeMonth": 257,
     "timeYear": 267,
     "dailyMinutesDown": {}
   },
@@ -66,11 +66,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 167,
-    "timeDay": 142,
-    "timeWeek": 212,
-    "timeMonth": 170,
-    "timeYear": 167,
+    "time": 169,
+    "timeDay": 247,
+    "timeWeek": 216,
+    "timeMonth": 176,
+    "timeYear": 169,
     "dailyMinutesDown": {}
   }
 ]
