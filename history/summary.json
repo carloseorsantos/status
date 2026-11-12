@@ -22,18 +22,20 @@
     "url": "https://www.heeey.click/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/www.heeey.click.ico",
     "slug": "app-and-database",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 3492,
-    "timeDay": 3649,
-    "timeWeek": 3574,
-    "timeMonth": 3486,
-    "timeYear": 3492,
-    "dailyMinutesDown": {}
+    "time": 3527,
+    "timeDay": 4428,
+    "timeWeek": 3778,
+    "timeMonth": 3540,
+    "timeYear": 3527,
+    "dailyMinutesDown": {
+      "2026-11-12": 0
+    }
   },
   {
     "name": "REST API",
